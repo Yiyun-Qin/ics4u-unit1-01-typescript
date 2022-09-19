@@ -1,0 +1,11 @@
+GET type
+IF (type == "0.25") THEN
+    log_number = car_weight / weight_metre / 0.25
+ELSEIF (type == "0.5") THEN
+    log_number = car_weight / weight_metre / 0.5
+ELSEIF (type == "1") THEN
+    log_number = car_weight / weight_metre / 1
+ELSE
+    SHOW "Please choose a type in options!"
+ENDIF
+SHOW "log_number logs need to be placed on the truck."
